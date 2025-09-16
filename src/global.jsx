@@ -14,7 +14,7 @@ export default (props) => {
   return (
     <>
       <Head htmlAttributes={{ lang: 'en' }}>
-        <title>Friendly Frontend Starter | {title}</title>
+        <title>GCG | {title}</title>
         <script src="/src/main.js" type="module" />
         <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
         <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />

@@ -1,50 +1,27 @@
 import ServiceCard from "@/components/ServiceCard"
+import SERVICESKARDS from "@/constants/ServicesCards"
 import './Services.scss'
 
-export default () => {
-
-  const servicesCards = [
-    {
-      iconName: 'certificate-solid',
-      title: 'European Certification / CE Marking',
-      description: 'CE маркування та відповідність європейським директивам для вступу на ринок ЄС',
-
-    },
-    {
-      iconName: 'globe-americas',
-      title: 'Worldwide Conformity & Certification',
-      description: 'Сертифікація для США, Канади, Австралії, Китаю та інших країн',
-
-    },
-    {
-      iconName: 'shield',
-      title: 'Private Certifications',
-      description: 'UL, ETL, MET, CSA, SGS, TÜV та інші престижні сертифікації',
-
-    },
-    {
-      iconName: 'contract',
-      title: 'Certification Services',
-      description: '[Підготовка технічних файлів та декларацій відповідності',
-    },
-  ]
+export default () => { 
 
   return (
     <section className="services" aria-labelledby="services-title">
       <div className="services__inner container">
         <div className="services__header">
-          <h2 className="services__title">
-            Наші послуги
+          <h2 className="services__title title-h2">
+            Our Services
           </h2>
-          <p className="services__subtitle">
-            Повний спектр послуг з сертифікації продукції та управління якістю
-          </p>
+          <div className="services__subtitle">
+            <p>
+              Full range of product certification and quality management services
+            </p>
+          </div>
           <div className="services__cards">
-            {servicesCards.map(({ iconName, title, description }, item) => (
+            {SERVICESKARDS.map(({ iconName, title, descriptions }, item) => (
               <ServiceCard
                 iconName={iconName}
                 title={title}
-                description={description}
+                descriptions={descriptions}
                 key={item}
               />
             ))}

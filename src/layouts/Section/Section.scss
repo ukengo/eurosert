@@ -1,18 +1,24 @@
 .section {
   display: grid;
-  row-gap: fluid(80, 40);
+  row-gap: fluid(15, 10);
   padding-block: 50px;
 
+
   &__header {
-    display: flex;
+    /*  display: flex;    
     justify-content: space-between;
     align-items: center;
-    column-gap: 16px;
+    column-gap: 16px; */
 
     @include mobile {
       flex-direction: column;
       align-items: start;
       row-gap: 20px;
     }
+  }
+
+  &__title {
+    color: var(--color-primary);
+    margin-bottom: 20px;
   }
 }

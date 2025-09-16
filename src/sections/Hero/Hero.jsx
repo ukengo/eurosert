@@ -16,21 +16,6 @@ export default () => {
     },
   ]
 
-  const badges = [
-    {
-      text: 'CE',
-    },
-    {
-      text: 'lorem',
-    },
-    {
-      text: 'lorem',
-    },
-    {
-      text: 'lorem',
-    },
-  ]
-
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero__inner container">

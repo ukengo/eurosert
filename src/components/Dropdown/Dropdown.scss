@@ -1,0 +1,36 @@
+.dropdown {
+  position: relative;
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(253, 252, 252);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+
+    &:hover {
+      // background: var(--bg-soft);
+      color: var(--color-primary);
+    }
+
+  }
+
+  &__item {
+    color: var(--color-black-menu);
+  }
+}

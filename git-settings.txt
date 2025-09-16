@@ -1,0 +1,18 @@
+user.name=ukengo
+user.email=office@friedman.com.ua
+init.defaultbranch=main
+alias.ll=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+alias.br=branch
+alias.co=checkout
+alias.st=status
+alias.cma=commit -a
+alias.p=push
+alias.hist=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+alias.ad=add .
+alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+alias.cm=commit
+alias.l=log --oneline --decorate --all
+core.editor=Code -w
+core.autocrlf=false
+core.safecrlf=false
+safe.directory=E:/Мельник/friedman

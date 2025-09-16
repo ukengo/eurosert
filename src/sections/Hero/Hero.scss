@@ -10,11 +10,10 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: var(--color-white);  
+  color: var(--color-white);
 
   &__inner {
     position: relative;
-    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

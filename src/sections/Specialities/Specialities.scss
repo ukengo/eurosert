@@ -1,0 +1,12 @@
+.specialities {
+  &__text{
+    margin-bottom: 32px;
+  }
+  
+  &__cards {
+    margin: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 32px;
+  }
+}

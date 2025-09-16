@@ -1,0 +1,15 @@
+.expert {
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    display: grid;
+    gap: 40px;
+
+    &--grid {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+    }
+  }
+}

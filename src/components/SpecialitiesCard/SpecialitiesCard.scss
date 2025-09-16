@@ -1,0 +1,16 @@
+.specialities-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid transparent;
+
+  &:hover {
+  //  border: 1px solid var(--color-primary);
+  }
+
+  &__svg {
+    height: 50px;
+    width: 50px;
+    color: var(--color-primary);
+  }
+}

@@ -1,0 +1,14 @@
+.step-card {
+display: flex;
+gap: 30px;
+
+  &__title {
+    font-weight: 600;
+    @include fluid-text(20, 16);
+  }
+
+  &__description {
+    font-weight: 400;
+    ;
+  }
+}

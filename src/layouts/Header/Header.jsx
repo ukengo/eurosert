@@ -2,6 +2,7 @@ import './Header.scss'
 import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import BurgerButton from '@/components/BurgerButton'
+import Dropdown from '@/components/Dropdown'
 
 export default (props) => {
   const { url } = props
@@ -10,18 +11,33 @@ export default (props) => {
     {
       label: 'Home',
       href: '/',
+      dropdown: null,
     },
     {
       label: 'Certifications',
-      href: '/about',
+      href: '/european',
+      dropdown: null,
+      /* dropdown: [
+        { label: 'European Certification', href: 'european' },
+        { label: 'Worldwide Conformity & Certification', href: 'worldwide' },
+        { label: 'Private Certifications', href: 'private' },
+        { label: 'Certification Services', href: 'certservices' },
+      ], */
+    },
+    {
+      label: 'CE Marking',
+      href: '/cemarking',
+      dropdown: null,
     },
     {
       label: 'ISO Standards',
-      href: '#',
+      href: '/iso',
+      dropdown: null,
     },
     {
       label: 'Contacts',
-      href: '#',
+      href: '/contacts',
+      dropdown: null,
     },
   ]
 
@@ -35,8 +51,11 @@ export default (props) => {
         >
           <nav className="header__menu">
             <ul className="header__menu-list">
-              {menuItems.map(({ label, href }, index) => (
-                <li className="header__menu-item" key={index}>
+              {menuItems.map(({ label, href, dropdown }, index) => (
+                <li
+                  className={clsx(
+                    'header__menu-link', dropdown && 'header__menu-link--dropdown'
+                  )} key={index}>
                   <a
                     className={clsx(
                       'header__menu-link',
@@ -46,6 +65,7 @@ export default (props) => {
                   >
                     {label}
                   </a>
+                  {dropdown && <Dropdown items={dropdown} />}
                 </li>
               ))}
             </ul>

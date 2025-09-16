@@ -1,0 +1,33 @@
+import './Steps.scss'
+import SectionSteps from '@/layouts/SectionSteps'
+
+export default (props) => {
+
+  const {
+    classNameMod,
+    title,
+    description,
+    list,
+    image,
+    buttonText,
+  } = props
+
+  return (
+    <SectionSteps
+      className="steps"
+      classNameMod={classNameMod}
+      title={title}
+      description={description}
+      image={image}
+      buttonText={buttonText}
+    >
+      <ul>
+        {list.map((item, index) => (
+          <li className="steps__item" key={index}>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </SectionSteps>
+  )
+}

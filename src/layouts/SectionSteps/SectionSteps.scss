@@ -1,0 +1,33 @@
+.steps {
+  padding-block: 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 64px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 16px;
+  }
+
+  &__title {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include fluid-text(18, 16);
+  }
+
+  &__picture {
+    @include flex-center();
+    flex-direction: column;
+  }
+
+  &__image {
+    aspect-ratio: 1;
+    width: 180px;
+    object-fit: contain;
+  }
+}

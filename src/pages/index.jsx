@@ -1,27 +1,45 @@
+import Helpyou from '@/sections/Helpyou'
 import Hero from '@/sections/Hero'
+import Howwork from '@/sections/Howwork/Howwork'
 import Services from '@/sections/Services'
 
 export const metadata = {
   title: 'Home',
 }
 
+
 export default () => {
+
   return (
     <>
-      <div className="container">
-        {/*  <h1>Home page</h1>
-        <Button>Button</Button>
-        <Button href="/">Link</Button>
-        <Field
-          label="Phone Number"
-          placeholder="+7 (999) 999-99-99"
-          inputMode="tel"
-          mask="+7 (000) 000-00-00"
-          isRequired
-        /> */}
-      </div>
       <Hero />
       <Services />
+      <Howwork
+        title='Our Process'
+        subtitle='Comprehensive certification process from start to finish'
+        howWorkCards={
+          [
+            {
+              title: 'Product Analysis',
+              description: 'Classification of products and identification of required standards for each certification',
+            },
+            {
+              title: 'Documentation Preparation',
+              description: 'Consulting on the identification, acquisition, and interpretation of standards',
+            },
+            {
+              title: 'Testing',
+              description: 'Management and analysis of tests to ensure product compliance',
+            },
+            {
+              title: 'Certification',
+              description: 'Obtaining certification and support throughout the commercialization process',
+            },
+          ]
+        }
+      />
+
+      <Helpyou />
     </>
   )
 }

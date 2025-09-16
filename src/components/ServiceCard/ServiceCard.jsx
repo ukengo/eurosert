@@ -1,21 +1,23 @@
-import Icon from '@/components/Icon'
 import './ServiceCard.scss'
+import IconCardRed from '../IconCardRed'
 
 export default (props) => {
 
   const {
     iconName,
     title,
-    description,
+    descriptions,
   } = props
 
   return (
     <div className="service-card">
-      <div className="service-card__icon">
-        <Icon className="service-card__svg" name={iconName} hasFill />
-      </div>
+      <IconCardRed iconRedName={iconName} />
       <h3 className="service-card__title">{title}</h3>
-      <p className="service-card__description">{description}</p>
+      {descriptions.map((description, item) => (
+        <div className='service-card__description' key={item}>
+          <p>{description}</p>
+        </div>
+      ))}
     </div>
   )
 }
