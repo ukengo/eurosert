@@ -1,34 +1,33 @@
 .howwork {
-  margin-top: 140px;
-  padding: 80px 0;
+  margin-top: fluid(100, 40);
+  margin-bottom: fluid(64, 32);
+  padding: fluid(20, 10);
   background-color: var(--color-gray-light);
   text-align: center;
-  margin-bottom: 64px;
 
   &__title {}
 
   &__subtitle {
     font-size: 18px;
-    color: var(--color-gray-black);    
+    color: var(--color-gray-black);
     margin: 0 auto 16px;
 
   }
 
   &__cards {
-    margin: 60px;
+    margin: fluid(60, 20);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     counter-reset: item;
- 
 
-
-
-
-
-    /*       @include laptop {
+    @include tablet2 {
       grid-template-columns: repeat(2, 1fr);
-      gap: 100px;
-    }  */
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
   }
 }

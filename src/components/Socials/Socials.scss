@@ -1,8 +1,13 @@
-.socials__svg {
-  width: 150px;
-  height: 150px;
-  color: #25D366;
-  /* Колір WhatsApp */
+.socials {
+
+  &__item {
   
+  }
+
+  &__svg {
+    width: 150px;
+    height: 150px;
+    color: #25D366;
+  }
 
 }

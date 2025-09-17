@@ -1,19 +1,42 @@
 .footer {
-  
+
   padding: 60px 30px 20px;
   background-color: var(--color-gray);
   color: var(--color-white);
 
+  @include mobile-s {
+    padding: 10px;
+  }
+
   &__items {
     display: grid;
-    //grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 60px;
     margin-bottom: 32px;
+
+    @include tablet {
+      gap: 30px;
+    }
+
+    @include tablet2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    @include mobile-s {
+      margin-bottom: 0;
+    }
   }
 
   &__item {
+    flex: 1;
     line-height: 1.7;
+
+    @include tablet {
+      flex: 0 1 auto;
+      gap: 30px;
+    }
   }
 
   &-title {
@@ -30,5 +53,10 @@
     text-align: center;
     font-weight: 200;
     color: #c4c3c3;
+
+    @include mobile-s {
+      margin-top: 5px;
+      padding-top: 5px;
+    }
   }
 }

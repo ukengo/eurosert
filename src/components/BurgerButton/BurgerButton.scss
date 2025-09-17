@@ -3,12 +3,12 @@
   @include square(44px);
 
   padding: 0;
-  background-color: var(--color-black);
-  border: var(--border-width-m) solid var(--color-black);
+  background-color: var(--color-primary);
+  border: var(--border-width-m) solid var(--color-primary);
   border-radius: var(--border-radius-xs);
 
   @include hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     border-color: transparent;
   }
 

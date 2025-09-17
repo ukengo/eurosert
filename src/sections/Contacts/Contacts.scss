@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 50px;
+  padding-top: fluid(50, 10);
 
   // .contacts_title
 
@@ -10,7 +10,17 @@
   &__inner {
     display: grid;
     grid-template-columns: 50% auto;
-    margin: 50px;
+    margin: fluid(50, 5);
+    gap: 15px;
+
+    @include tablet2 {
+      margin: 0;
+    }
+
+    @include mobile {
+      margin: 0;
+      grid-template-columns: 1fr;
+    }
 
   }
 
@@ -21,21 +31,32 @@
   // .contacts__description
 
   &__description {
-    margin-bottom: 50px;
-    font-size: 20px;
+    margin-bottom: fluid(50, 10);
+    font-size: fluid(20, 15);
+
+    @include mobile {
+      text-align: center;
+    }
   }
-  
+
   // .contacts__text
 
   &__text {}
 
   // .contacts__item
 
-  &__item {font-size: 20px;
-    display: flex;    
+  &__item {
+    font-size: fluid(20, 15);
+    display: flex;
     align-items: center;
-    gap: 30px;    
-    margin-bottom: 30px;
+    gap: 30px;
+    margin-bottom: fluid(30, 15);
+
+    @include mobile {
+      justify-content: center;
+    }
+
+
   }
 
   // .contacts__icon

@@ -48,7 +48,7 @@ export default (props) => {
         <dialog
           className="header__overlay-menu-dialog"
           data-js-overlay-menu-dialog=""
-        >
+        > 
           <nav className="header__menu">
             <ul className="header__menu-list">
               {menuItems.map(({ label, href, dropdown }, index) => (

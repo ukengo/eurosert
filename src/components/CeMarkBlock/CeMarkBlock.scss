@@ -1,27 +1,12 @@
-.service-card {
-  padding: 32px;
-  border-radius: var(--border-radius-l);
-  background-color: var(--color-white);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  @include flex-center();
-  flex-direction: column;
+.block-about-ce-mark {
 
+  // .block-about-ce-mark__title
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  }
+  &__title {}
 
-  &__title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: var(--color-black-h2);
-  }
+  // .block-about-ce-mark__description
 
   &__description {
     color: var(--color-gray-black);
-    line-height: 1.6;
   }
 }

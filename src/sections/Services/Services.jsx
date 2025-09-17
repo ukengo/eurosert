@@ -5,7 +5,7 @@ import './Services.scss'
 export default () => { 
 
   return (
-    <section className="services" aria-labelledby="services-title">
+    <section className="services" aria-labelledby="services-title" id="services"> 
       <div className="services__inner container">
         <div className="services__header">
           <h2 className="services__title title-h2">

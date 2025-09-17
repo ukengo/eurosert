@@ -6,12 +6,12 @@ export default () => {
   const links = [
     {
       className: 'button--primary',
-      href: '#contact',
+      href: '/contacts',
       text: 'Request a consultation',
     },
     {
       className: 'button--secondary',
-      href: '#contact',
+      href: '#services',
       text: 'Discover more',
     },
   ]
@@ -37,15 +37,6 @@ export default () => {
               </Button>
             ))}
           </div>
-        </div>
-        <div className="hero__services">
-{/*           <div className="hero__services-badges">
-            {badges.map(({ text }, item) => (
-              <div className="hero__services-badge" key={item}>
-                {text}
-              </div>
-            ))}
-          </div> */}
         </div>
       </div>
     </section>

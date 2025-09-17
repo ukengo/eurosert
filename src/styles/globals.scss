@@ -1,5 +1,6 @@
 html {
   scrollbar-gutter: auto;
+  scroll-behavior: smooth;
 
   &.is-lock {
     overflow: hidden;
@@ -106,3 +107,9 @@ a {
 [class*="--lining"] {
   background-color: var(--color-gray-light);
 }
+
+  @include mobile {    
+    p:where(:not([class]):not(:last-child)) {
+    margin-bottom: 5px;
+}
+  }

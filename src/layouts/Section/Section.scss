@@ -1,7 +1,7 @@
 .section {
   display: grid;
   row-gap: fluid(15, 10);
-  padding-block: 50px;
+  padding-block: fluid(50, 10);
 
 
   &__header {
@@ -19,6 +19,6 @@
 
   &__title {
     color: var(--color-primary);
-    margin-bottom: 20px;
+    margin-bottom: fluid(20, 10)
   }
 }

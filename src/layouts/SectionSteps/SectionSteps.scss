@@ -1,19 +1,23 @@
 .steps {
-  padding-block: 50px;
+  padding-block: fluid(50, 10);
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 64px;
+  gap: fluid(64, 10);
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 
   &__header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    column-gap: 16px;
+    gap: fluid(16, 0);
   }
 
   &__title {
     color: var(--color-primary);
-    margin-bottom: 20px;
+    margin-bottom: fluid(20, 5);
   }
 
   &__description {
