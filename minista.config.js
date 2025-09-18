@@ -98,5 +98,11 @@ export default defineConfig({
   },
 
   // Можно прокинуть дополнительные опции в Vite
-  vite: {},
+  vite: {
+    server: {
+    allowedHosts: [
+      '5173-ivvn5n79t55m1pyuugfow-6532622b.e2b.dev',
+    ],
+  },
+  },
 })
