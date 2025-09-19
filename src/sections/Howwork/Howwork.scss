@@ -1,5 +1,5 @@
 .howwork {
-  margin-top: fluid(100, 40);
+  margin-top: fluid(100, 10);
   margin-bottom: fluid(64, 32);
   padding: fluid(20, 10);
   background-color: var(--color-gray-light);
@@ -11,22 +11,34 @@
     font-size: 18px;
     color: var(--color-gray-black);
     margin: 0 auto 16px;
-
   }
 
   &__cards {
-    margin: fluid(60, 20);
+    $grid-columns: 1; // Початкове значення змінної Sass
+    --gridColumns: #{$grid-columns}; // Присвоюємо початкове значення CSS-кастомній властивості
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
     gap: 16px;
     counter-reset: item;
 
-    @include tablet2 {
-      grid-template-columns: repeat(2, 1fr);
+    // Генеруємо класи з модифікаторами і обробляємо tablet для кожного
+    @for $i from 1 through 12 {
+      &--#{$i} {
+        $grid-columns: $i; // Оновлюємо змінну Sass для поточного модифікатора
+        --gridColumns: #{$grid-columns}; // Оновлюємо CSS-кастомну властивість
+
+        @include tablet {
+          @if $grid-columns >3 {
+            // Використовуємо оновлену змінну Sass
+            --gridColumns: 2; // Змінюємо на 2 стовпці для tablet
+          }
+        }
+      }
     }
 
     @include mobile {
-      grid-template-columns: 1fr;
+      --gridColumns: 1;
       gap: 10px;
     }
   }

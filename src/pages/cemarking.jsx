@@ -21,6 +21,7 @@ export default () => {
         list={LISTSTEPS}
         image='./src/assets/images/eurosert.png'
         buttonText='More about European Certification'
+        buttonHref="/european"
       />
       <Helpyou />
     </main>

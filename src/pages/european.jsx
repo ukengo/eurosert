@@ -62,6 +62,7 @@ return (
         list={LISTSTEPS}
         image='./src/assets/images/CE-mark.png'
         buttonText='More about CE Marking'
+        buttonHref='/cemarking'
       />
 
       <Specialities />

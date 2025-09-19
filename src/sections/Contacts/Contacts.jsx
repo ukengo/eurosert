@@ -3,6 +3,7 @@ import './Contacts.scss'
 import clsx from 'clsx'
 import Contactform from '@/components/Contactform'
 import Icon from '@/components/Icon'
+import Socials from '@/components/Socials'
 
 export default () => {
   const contacts = [
@@ -49,6 +50,9 @@ export default () => {
                 ))
               }
             </ul>
+            <div className="contacts__socials">
+              <Socials />
+            </div>
           </div>
           <div className="contacts__form">
             <Contactform />

@@ -10,6 +10,7 @@ export default (props) => {
     list,
     image,
     buttonText,
+    buttonHref,
   } = props
 
   return (
@@ -20,6 +21,7 @@ export default (props) => {
       description={description}
       image={image}
       buttonText={buttonText}
+      buttonHref={buttonHref}
     >
       <ul>
         {list.map((item, index) => (

@@ -1,8 +1,9 @@
 import HowworkCard from '@/components/HowworkCard'
 import './Howwork.scss'
+import clsx from 'clsx'
 
 export default ({ title, subtitle, howWorkCards }) => {
-  
+
   return (
     <section className="howwork" aria-labelledby="howwork-title">
       <div className="howwork__inner container">
@@ -13,10 +14,10 @@ export default ({ title, subtitle, howWorkCards }) => {
           <div className="howwork__subtitle">
             {subtitle}
             <p>
-              
+
             </p>
           </div>
-          <div className="howwork__cards">
+          <div className={clsx('howwork__cards', 'howwork__cards--' + howWorkCards.length)}>
             {howWorkCards.map(({ title, description }, index) => (
               <HowworkCard
                 title={title}

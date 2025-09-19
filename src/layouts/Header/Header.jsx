@@ -17,12 +17,6 @@ export default (props) => {
       label: 'Certifications',
       href: '/european',
       dropdown: null,
-      /* dropdown: [
-        { label: 'European Certification', href: 'european' },
-        { label: 'Worldwide Conformity & Certification', href: 'worldwide' },
-        { label: 'Private Certifications', href: 'private' },
-        { label: 'Certification Services', href: 'certservices' },
-      ], */
     },
     {
       label: 'CE Marking',

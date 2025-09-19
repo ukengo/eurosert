@@ -18,8 +18,10 @@
     }
 
     @include mobile {
-      margin: 0;
-      grid-template-columns: 1fr;
+     display: flex;
+      flex-direction: column;
+     flex: 1 1 100%;
+     
     }
 
   }
@@ -55,8 +57,10 @@
     @include mobile {
       justify-content: center;
     }
+  }
 
-
+  &__socials {
+    @include flex-center();
   }
 
   // .contacts__icon

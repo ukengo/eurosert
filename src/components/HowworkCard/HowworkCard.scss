@@ -1,10 +1,10 @@
 .howwork-card {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: column;  
+  justify-content: space-around;
   padding: 20px;
-  counter-increment: item;
-
+  counter-increment: item;   
+  
   &::before {
     content: counter(item);
     width: 60px;

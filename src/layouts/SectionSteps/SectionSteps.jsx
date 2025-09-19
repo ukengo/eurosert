@@ -4,7 +4,7 @@ import { Image } from 'minista'
 import Button from '@/components/Button'
 
 export default (props) => {
-  const { className, classNameMod, title, titleId, description, image, buttonText, children } = props
+  const { className, classNameMod, title, titleId, description, image, buttonText, buttonHref, children } = props
 
   return (
     <section
@@ -33,7 +33,7 @@ export default (props) => {
           buttonText && (
             <div className="section-steps__link">
               <Button
-                className={clsx('section-steps__button', className + '__button', 'button--primary')} href="#">{buttonText}</Button>
+                className={clsx('section-steps__button', className + '__button', 'button--primary')} href={buttonHref}>{buttonText}</Button>
             </div>
           )}
       </div>
