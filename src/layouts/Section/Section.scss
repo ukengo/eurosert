@@ -3,7 +3,6 @@
   row-gap: fluid(15, 10);
   padding-block: fluid(50, 10);
 
-
   &__header {
     /*  display: flex;    
     justify-content: space-between;
@@ -18,7 +17,7 @@
   }
 
   &__title {
+    margin-bottom: fluid(20, 10);
     color: var(--color-primary);
-    margin-bottom: fluid(20, 10)
   }
 }

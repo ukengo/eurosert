@@ -1,27 +1,27 @@
 .service-card {
+  flex-direction: column;
   padding: 32px;
-  border-radius: var(--border-radius-l);
   background-color: var(--color-white);
+  border-radius: var(--border-radius-l);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  @include flex-center();
-  flex-direction: column;
 
+  @include flex-center;
 
   &:hover {
-    transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
   }
 
   &__title {
+    margin-bottom: 16px;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 16px;
     color: var(--color-black-h2);
   }
 
   &__description {
-    color: var(--color-gray-black);
     line-height: 1.6;
+    color: var(--color-gray-black);
   }
 }

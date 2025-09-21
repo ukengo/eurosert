@@ -8,8 +8,10 @@
   --color-secondary: #e45555;
 
   --color-primary-rgb: 191, 18, 46;
+
   /* for rgba() usage */
   --color-white-rgb: 255, 255, 255;
+
   /* for rgba() usage */
 
   --color-gray: #808080;
@@ -33,12 +35,10 @@
   --font-family-base: 'Inter';
 
   --container-width: #{fluid-to-laptop(
- $container-desktop-width,
-  $container-laptop-width )
-}
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+  --container-padding-x: 24px;
 
-;
---container-padding-x: 24px;
-
---transition-duration: 0.2s;
+  --transition-duration: 0.2s;
 }

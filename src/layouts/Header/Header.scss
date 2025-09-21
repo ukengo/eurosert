@@ -6,7 +6,7 @@
   padding-block: 10px;
   background: rgba(255, 255, 255, 0.95);
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);  
+  backdrop-filter: blur(10px);
 
   &__inner {
     display: grid;
@@ -31,15 +31,13 @@
     padding: var(--container-padding-x);
     background-color: var(--color-gray);
     border: none;
-    opacity: .9;
+    opacity: 0.9;
 
     @include mobile-above {
       display: contents;
     }
 
     @include mobile {
-
-
       &[open] {
         display: flex;
       }
@@ -82,17 +80,16 @@
       }
 
       @include mobile {
-        color: var(--color-white);
         font-size: 20px;
+        color: var(--color-white);
       }
     }
   }
 
   &__menu-link--dropdown:hover .dropdown__list {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
     transform: translateY(0);
-
   }
 
   &__actions {

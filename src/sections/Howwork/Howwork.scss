@@ -2,15 +2,16 @@
   margin-top: fluid(100, 10);
   margin-bottom: fluid(64, 32);
   padding: fluid(20, 10);
-  background-color: var(--color-gray-light);
   text-align: center;
+  background-color: var(--color-gray-light);
 
-  &__title {}
+  &__title {
+  }
 
   &__subtitle {
+    margin: 0 auto 16px;
     font-size: 18px;
     color: var(--color-gray-black);
-    margin: 0 auto 16px;
   }
 
   &__cards {
@@ -39,6 +40,7 @@
 
     @include mobile {
       --gridColumns: 1;
+
       gap: 10px;
     }
   }

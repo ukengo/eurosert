@@ -13,13 +13,10 @@
       @include tablet2 {
         grid-template-columns: 1fr 1fr;
       }
+
       @include mobile {
         grid-template-columns: 1fr;
       }
-
     }
-
-
-
   }
 }

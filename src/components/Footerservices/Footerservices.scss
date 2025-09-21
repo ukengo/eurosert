@@ -1,18 +1,17 @@
 .footer-services {
+  // .footer-services__title
 
-		// .footer-services__title
+  &__title {
+  }
 
-		&__title {
-		}
+  // .footer-services__items
 
-		// .footer-services__items
+  &__items {
+  }
 
-		&__items {
-		}
+  // .footer-services__item
 
-		// .footer-services__item
-
-		&__item {
-      line-height: 2.0;
-		}
+  &__item {
+    line-height: 2;
+  }
 }

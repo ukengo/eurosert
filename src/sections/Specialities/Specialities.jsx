@@ -3,7 +3,6 @@ import Section from '@/layouts/Section'
 import './Specialities.scss'
 
 export default () => {
-
   //specialities
   const specialities = [
     {
@@ -69,12 +68,12 @@ export default () => {
   ]
 
   return (
-    <Section
-      title="Our Specialities"
-      className="specialities"
-    >
-
-      <p className="specialities__text">Ми надаємо повну європейську сертифікацію або спеціальну допомогу на будь-якому етапі виконання обов'язків з сертифікації продукції, сприяючи правильному розумінню її правових вимог та застосовних директив.</p>
+    <Section title="Our Specialities" className="specialities">
+      <p className="specialities__text">
+        Ми надаємо повну європейську сертифікацію або спеціальну допомогу на
+        будь-якому етапі виконання обов'язків з сертифікації продукції, сприяючи
+        правильному розумінню її правових вимог та застосовних директив.
+      </p>
       <div className="specialities__cards">
         {specialities.map(({ iconName, text, href }, index) => (
           <SpecialitiesCard
@@ -84,8 +83,7 @@ export default () => {
             href={href}
           />
         ))}
-      </div >
+      </div>
     </Section>
-
   )
 }

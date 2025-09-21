@@ -3,32 +3,32 @@
 
   // .contacts_title
 
-  &_title {}
+  &_title {
+  }
 
   // .contacts__inner
 
   &__inner {
     display: grid;
     grid-template-columns: 50% auto;
-    margin: fluid(50, 5);
     gap: 15px;
+    margin: fluid(50, 5);
 
     @include tablet2 {
       margin: 0;
     }
 
     @include mobile {
-     display: flex;
+      flex: 1 1 100%;
+      display: flex;
       flex-direction: column;
-     flex: 1 1 100%;
-     
     }
-
   }
 
   // .contacts__content
 
-  &__content {}
+  &__content {
+  }
 
   // .contacts__description
 
@@ -43,16 +43,17 @@
 
   // .contacts__text
 
-  &__text {}
+  &__text {
+  }
 
   // .contacts__item
 
   &__item {
-    font-size: fluid(20, 15);
     display: flex;
     align-items: center;
     gap: 30px;
     margin-bottom: fluid(30, 15);
+    font-size: fluid(20, 15);
 
     @include mobile {
       justify-content: center;
@@ -60,26 +61,29 @@
   }
 
   &__socials {
-    @include flex-center();
+    @include flex-center;
   }
 
   // .contacts__icon
 
-  &__icon {}
+  &__icon {
+  }
 
   // .contacts__svg
 
   &__svg {
-    @include flex-center();
-    color: var(--color-primary);
+    @include flex-center;
 
+    color: var(--color-primary);
   }
 
   // .contacts__link
 
-  &__link {}
+  &__link {
+  }
 
   // .contacts__form
 
-  &__form {}
+  &__form {
+  }
 }

@@ -42,14 +42,17 @@ export default (props) => {
         <dialog
           className="header__overlay-menu-dialog"
           data-js-overlay-menu-dialog=""
-        > 
+        >
           <nav className="header__menu">
             <ul className="header__menu-list">
               {menuItems.map(({ label, href, dropdown }, index) => (
                 <li
                   className={clsx(
-                    'header__menu-link', dropdown && 'header__menu-link--dropdown'
-                  )} key={index}>
+                    'header__menu-link',
+                    dropdown && 'header__menu-link--dropdown'
+                  )}
+                  key={index}
+                >
                   <a
                     className={clsx(
                       'header__menu-link',

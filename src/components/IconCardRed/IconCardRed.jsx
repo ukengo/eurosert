@@ -2,7 +2,6 @@ import Icon from '@/components/Icon'
 import './IconCardRed.scss'
 
 export default (props) => {
-
   const { iconRedName } = props
 
   return (

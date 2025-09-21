@@ -1,38 +1,43 @@
 .howwork-card {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: space-around;
   padding: 20px;
-  counter-increment: item;   
-  
+  counter-increment: item;
+
   &::before {
     content: counter(item);
     width: 60px;
     height: 60px;
     margin: 0 auto 20px;
-    @include flex-center();
+
+    @include flex-center;
+
     font-size: 24px;
     font-weight: 700;
     color: var(--color-white);
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 100%
+    );
     border-radius: 50%;
   }
 
   &__title {
-    margin-bottom: 16px;
     min-height: 60px;
+    margin: 0 0 10px;
+    margin-bottom: 16px;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.2;
     color: var(--color-black-h2);
-    margin: 0 0 10px 0;
-    font-size: 24px;
   }
 
   &__description {
-    color: var(--color-gray-black);
-    line-height: 1.6;
     margin: 0;
     font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-gray-black);
   }
 }

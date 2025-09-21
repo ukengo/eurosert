@@ -1,49 +1,49 @@
 .about-iso {
-line-height: 1.75; /* 28/16 */
-		// .about-ce-mark__title
+  line-height: 1.75; /* 28/16 */
+  // .about-ce-mark__title
 
-		&__title {
-		}
+  &__title {
+  }
 
-		// .about-ce-mark__descroption
+  // .about-ce-mark__descroption
 
-		&__descroption {
-		 margin-bottom: 50px;
-    }
+  &__descroption {
+    margin-bottom: 50px;
+  }
 
-		// .about-ce-mark__blocks
+  // .about-ce-mark__blocks
 
-		&__blocks {
-      display: flex;
-      gap: 32px;
-      margin-bottom: 50px;
-		}
+  &__blocks {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
 
-		// .about-ce-mark__content
+  // .about-ce-mark__content
 
-		&__content {
-      margin-bottom: 24px;
-		}
+  &__content {
+    margin-bottom: 24px;
+  }
 
-		// .about-ce-mark__list
+  // .about-ce-mark__list
 
-		&__list {
-      margin: 24px;
-		}
+  &__list {
+    margin: 24px;
+  }
 
-		// .about-ce-mark__item
+  // .about-ce-mark__item
 
-		&__item {
-      list-style-type: disc;
-		}
+  &__item {
+    list-style-type: disc;
+  }
 
-		// .about-ce-mark__note-title
+  // .about-ce-mark__note-title
 
-		&__note-title {
-		}
+  &__note-title {
+  }
 
-		// .about-ce-mark__note-text
+  // .about-ce-mark__note-text
 
-		&__note-text {
-		}
+  &__note-text {
+  }
 }

@@ -2,17 +2,13 @@
   margin-top: fluid(50, 10);
 
   &__item {
-  
   }
 
   &__svg {
-    
     width: 100%;
     height: 50px; /* бажана висота */
+    color: #25d366;
     object-fit: cover; /* обрізає зображення, зберігаючи пропорції */
-    object-position: center; /* центрує зображення */    
-    color: #25D366;
+    object-position: center; /* центрує зображення */
   }
-
 }
-

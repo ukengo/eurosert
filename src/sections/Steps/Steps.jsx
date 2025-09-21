@@ -2,7 +2,6 @@ import './Steps.scss'
 import SectionSteps from '@/layouts/SectionSteps'
 
 export default (props) => {
-
   const {
     classNameMod,
     title,

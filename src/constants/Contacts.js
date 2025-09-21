@@ -1,14 +1,14 @@
 const CONTACTS = {
   phones: [
     {
-      phone: '+380 67 402 1578',
-      phonelink: '+380674021578',
+      phone: '+380 67 504 20 79',
+      phonelink: '+380675042079',
     },
   ],
   emails: [
     {
-      email: 'office@friedman.com.ua',
-      emaillink: 'office@friedman.com.ua',
+      email: 'controlperf@gmail.com',
+      emaillink: 'controlperf@gmail.com',
     },
   ],
 }

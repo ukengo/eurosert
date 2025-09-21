@@ -1,9 +1,7 @@
-
 import Contactform from '@/components/Contactform'
 import './Helpyou.scss'
 
 export default () => {
-
   const helpyous = [
     'Comprehensive support in obtaining European certification and CE Marking for your products',
     'Full compliance assessment for manufacturers, importers, and exporters regarding product legislation',

@@ -16,13 +16,17 @@ export default () => {
         {socials.map(({ name, url, iconName }, index) => (
           <li key={index} className="socials__item">
             <a href={url} target="_blank" rel="noopener noreferrer">
-              <Icon className="socials__svg" name={iconName} width="131" height="31" hasFill />
+              <Icon
+                className="socials__svg"
+                name={iconName}
+                width="131"
+                height="31"
+                hasFill
+              />
             </a>
           </li>
         ))}
       </ul>
-
     </div>
   )
-
 }

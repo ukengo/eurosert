@@ -5,29 +5,28 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(253, 252, 252);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 16px 0;
     min-width: 200px;
-    opacity: 0;
+    padding: 16px 0;
+    background-color: rgb(253, 252, 252);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     visibility: hidden;
-    transform: translateY(-10px);
+    opacity: 0;
     transition: all 0.3s ease;
+    transform: translateY(-10px);
   }
 
   &__link {
     display: block;
     padding: 0.5rem 1rem;
-    color: #333;
     text-decoration: none;
+    color: #333333;
     transition: background 0.3s ease;
 
     &:hover {
       // background: var(--bg-soft);
       color: var(--color-primary);
     }
-
   }
 
   &__item {

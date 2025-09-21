@@ -2,25 +2,25 @@
   margin-top: fluid(100, 40);
   margin-bottom: fluid(64, 32);
   padding: fluid(20, 10);
-  background-color: var(--color-gray-light);
   text-align: center;
+  background-color: var(--color-gray-light);
 
-  &__title {}
+  &__title {
+  }
 
   &__subtitle {
-    font-size: 18px;
-    color: var(--color-gray-black);
     max-width: 600px;
     margin: 0 auto 16px;
-
+    font-size: 18px;
+    color: var(--color-gray-black);
   }
 
   &__cards {
-    margin: fluid(60, 10);
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     gap: 32px;
+    margin: fluid(60, 10);
 
     @include mobile {
       grid-template-columns: 1fr;

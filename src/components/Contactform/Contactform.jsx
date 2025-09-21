@@ -1,29 +1,57 @@
-
 import Button from '@/components/Button'
 import './Contactform.scss'
 
 export default () => {
-
   return (
     <>
       <div className="contactform" aria-labelledby="services-title">
-        <h5 className="contactform__title">
-          Contact your GCG
-        </h5>
-        <form className="contactform__body contact-form" action="#" method="POST">
+        <h5 className="contactform__title">Contact your GCG</h5>
+        <form
+          className="contactform__body contact-form"
+          data-action="sendmail.php"
+          method="POST"
+          data-ajax
+          data-popup-message="#popup"
+        >
           <div className="contactform__group">
-            <label className="contactform__label" htmlFor="name">Name</label>
-            <input className="contactform__input" type="text" id="name" name="name" required />
+            <label className="contactform__label" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="contactform__input"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
           </div>
           <div className="contactform__group">
-            <label className="contactform__label" htmlFor="email">Email</label>
-            <input className="contactform__input" type="email" id="email" name="email" required />
+            <label className="contactform__label" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="contactform__input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
           </div>
           <div className="contactform__group">
-            <label className="contactform__label" htmlFor="message">Message</label>
-            <textarea className="contactform__textarea" id="message" name="message" rows="4" required></textarea>
+            <label className="contactform__label" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="contactform__textarea"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
           </div>
-          <Button className="contactform__button button--primary" type="submit">Send</Button>
+          <Button className="contactform__button button--primary" type="submit">
+            Send
+          </Button>
           {/* <button className="contactform__button button-primary" type="submit">Send</button> */}
         </form>
       </div>
@@ -55,22 +83,8 @@ export default () => {
         </form> 
       </div>*/}
     </>
-
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* <!DOCTYPE html>
 <html lang="uk">
@@ -103,7 +117,6 @@ export default () => {
   <script src="script.js"></script>
 </body>
 </html> */
-
 
 /* 
 body {

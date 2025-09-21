@@ -24,7 +24,9 @@ export default () => {
         </div>
       </div>
       <div className="footer__bottom">
-        <p className="footer__copyright">© 2025 Global Compliance Group. All rights reserved.</p>
+        <p className="footer__copyright">
+          © 2025 Global Compliance Group. All rights reserved.
+        </p>
       </div>
     </footer>
   )

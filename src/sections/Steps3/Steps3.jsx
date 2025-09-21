@@ -2,14 +2,7 @@ import './Steps3.scss'
 import SectionSteps from '@/layouts/SectionSteps'
 
 export default (props) => {
-
-  const {
-    classNameMod,
-    title,
-    description,
-    list,
-    image,
-  } = props
+  const { classNameMod, title, description, list, image } = props
 
   return (
     <SectionSteps
@@ -18,7 +11,6 @@ export default (props) => {
       title={title}
       description={description}
       image={image}
-      
     >
       <ul>
         {list.map((item, index) => (

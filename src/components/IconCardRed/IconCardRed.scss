@@ -1,12 +1,19 @@
 .icon-card-red {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  border-radius: 50%;
-  @include flex-center();
-  //margin: 0 auto 24px;
+
+  // margin: 0 auto 24px;
   color: white;
-  //font-size: 32px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  border-radius: 50%;
+
+  @include flex-center;
+
+  // font-size: 32px;
 
   &__svg {
     width: 40px;
