@@ -1,4 +1,64 @@
-const SERVICESKARDS = [
+const SERVICES_KARDS = [
+  {
+    iconName: 'certificate-solid',
+    title: 'Європейська сертифікація / Знак CE',
+    descriptions: [
+      'Повне маркування CE',
+      'Декларація відповідності ЄС',
+      'Європейські нормативи та регуляції',
+      'Випробування, проведені нотифікованими органами',
+      'Посібники користувача та технічна документація',
+      'Упаковка та маркування',
+    ],
+  },
+  {
+    iconName: 'globe-americas',
+    title: 'Світова відповідність та сертифікація',
+    descriptions: [
+      'Сполучені Штати Америки (США)',
+      'Канада (CA)',
+      'Австралія (AU)',
+      'Народна Республіка Китай (КНР)',
+      'Російська Федерація (РФ) та Євразійський економічний союз',
+    ],
+  },
+  {
+    iconName: 'shield',
+    title: 'Приватні сертифікації',
+    descriptions: [
+      'UL - Underwriters Laboratories (США)',
+      'ETL - Intertek Laboratories (США)',
+      'MET - MET Laboratories (США)',
+      'SGS - SGS Laboratories (США)',
+      'CSA - CSA Group (Канада)',
+      'TÜV Rheinland Laboratories (Німеччина)',
+      'TÜV SÜD Laboratories (Німеччина)',
+    ],
+  },
+  {
+    iconName: 'contract',
+    title: 'Послуги сертифікації',
+    descriptions: [
+      'Оцінка відповідності продукції',
+      'Уповноважений представник',
+      'Валідація сертифікатів',
+      'Доступ до ринку',
+      'Оцінка сертифікації продукції',
+      'Посібники користувача та технічна документація',
+    ],
+  },
+]
+
+export default SERVICES_KARDS
+
+
+
+
+
+
+
+/* 
+const SERVICES_KARDS = [
   {
     iconName: 'certificate-solid',
     title: 'European Certification / CE Marking',
@@ -47,6 +107,4 @@ const SERVICESKARDS = [
       'User Manuals & Technical Documentation',
     ],
   },
-]
-
-export default SERVICESKARDS
+] */

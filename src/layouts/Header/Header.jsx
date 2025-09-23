@@ -3,37 +3,10 @@ import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import BurgerButton from '@/components/BurgerButton'
 import Dropdown from '@/components/Dropdown'
+import { MENU_ITEMS } from '@/constants/others'
 
 export default (props) => {
   const { url } = props
-
-  const menuItems = [
-    {
-      label: 'Home',
-      href: '/',
-      dropdown: null,
-    },
-    {
-      label: 'Certifications',
-      href: '/european',
-      dropdown: null,
-    },
-    {
-      label: 'CE Marking',
-      href: '/cemarking',
-      dropdown: null,
-    },
-    {
-      label: 'ISO Standards',
-      href: '/iso',
-      dropdown: null,
-    },
-    {
-      label: 'Contacts',
-      href: '/contacts',
-      dropdown: null,
-    },
-  ]
 
   return (
     <header className="header" data-js-overlay-menu="">
@@ -45,7 +18,7 @@ export default (props) => {
         >
           <nav className="header__menu">
             <ul className="header__menu-list">
-              {menuItems.map(({ label, href, dropdown }, index) => (
+              {MENU_ITEMS.map(({ label, href, dropdown }, index) => (
                 <li
                   className={clsx(
                     'header__menu-link',

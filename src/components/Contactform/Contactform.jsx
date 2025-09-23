@@ -1,11 +1,12 @@
 import Button from '@/components/Button'
 import './Contactform.scss'
+import { CONTACTFORM_BUTTON, CONTACTFORM_LABEL_EMAIL, CONTACTFORM_LABEL_MESSAGE, CONTACTFORM_LABEL_NAME, CONTACTFORM_TITLE } from '@/constants/others'
 
 export default () => {
   return (
     <>
       <div className="contactform" aria-labelledby="services-title">
-        <h5 className="contactform__title">Contact your GCG</h5>
+        <h5 className="contactform__title">{CONTACTFORM_TITLE}</h5>
         <form
           className="contactform__body contact-form"
           data-action="sendmail.php"
@@ -15,7 +16,7 @@ export default () => {
         >
           <div className="contactform__group">
             <label className="contactform__label" htmlFor="name">
-              Name
+              {CONTACTFORM_LABEL_NAME}
             </label>
             <input
               className="contactform__input"
@@ -27,7 +28,7 @@ export default () => {
           </div>
           <div className="contactform__group">
             <label className="contactform__label" htmlFor="email">
-              Email
+              {CONTACTFORM_LABEL_EMAIL}
             </label>
             <input
               className="contactform__input"
@@ -39,7 +40,7 @@ export default () => {
           </div>
           <div className="contactform__group">
             <label className="contactform__label" htmlFor="message">
-              Message
+              {CONTACTFORM_LABEL_MESSAGE}
             </label>
             <textarea
               className="contactform__textarea"
@@ -50,7 +51,7 @@ export default () => {
             ></textarea>
           </div>
           <Button className="contactform__button button--primary" type="submit">
-            Send
+            {CONTACTFORM_BUTTON}
           </Button>
           {/* <button className="contactform__button button-primary" type="submit">Send</button> */}
         </form>

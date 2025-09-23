@@ -1,6 +1,7 @@
 import ServiceCard from '@/components/ServiceCard'
 import SERVICESKARDS from '@/constants/ServicesCards'
 import './Services.scss'
+import { SERVICES_SUBTITLE, SERVICES_TITLE } from '@/constants/others'
 
 export default () => {
   return (
@@ -11,11 +12,10 @@ export default () => {
     >
       <div className="services__inner container">
         <div className="services__header">
-          <h2 className="services__title title-h2">Our Services</h2>
+          <h2 className="services__title title-h2">{SERVICES_TITLE}</h2>
           <div className="services__subtitle">
             <p>
-              Full range of product certification and quality management
-              services
+              {SERVICES_SUBTITLE}
             </p>
           </div>
           <div className="services__cards">
