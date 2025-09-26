@@ -28,7 +28,17 @@
   'Телефон замовника: '
   .'<h3 style="display: inline;">'
   .$_POST['phone']
-  .'</h3>';
+  .'</h3><br>';
+  $body.=
+  'Email замовника: '
+  .'<h3 style="display: inline;">'
+  .$_POST['email']
+  .'</h3><br>';
+  $body.=
+  'Повідомлення замовника: '
+  .'<h3 style="display: inline;">'
+  .$_POST['message']
+  .'</h3><br>';
 
 	//if(trim(!empty($_POST['name']))){
 		//$body.='';

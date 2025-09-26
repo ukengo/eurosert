@@ -1,14 +1,20 @@
 import Section from '@/layouts/Section'
 import './AboutCEMark.scss'
 import CeMarkBlock from '@/components/CeMarkBlock'
-import { ABOUT_CE_MARK, ABOUT_CE_MARK_CONTENT, ABOUT_CE_MARK_DESCRIPTION, ABOUT_CE_MARK_NOTE, ABOUT_CE_MARK_NOTE_TEXT, ABOUT_CE_MARK_TITLE } from '@/constants/others'
+import {
+  ABOUT_CE_MARK,
+  ABOUT_CE_MARK_CONTENT,
+  ABOUT_CE_MARK_DESCRIPTION,
+  ABOUT_CE_MARK_NOTE,
+  ABOUT_CE_MARK_NOTE_TEXT,
+  ABOUT_CE_MARK_TITLE,
+} from '@/constants/others'
 
 export default () => {
-
   return (
     <Section
       className="about-ce-mark"
-    /* title='CE marking' */
+      /* title='CE marking' */
     >
       <h1 className="about-ce-mark__title">{ABOUT_CE_MARK_TITLE}</h1>
       <div className="about-ce-mark__descroption">
@@ -27,18 +33,21 @@ export default () => {
         {ABOUT_CE_MARK_CONTENT.map(({ paragraph, list }, index) => (
           <>
             <p key={index}>{paragraph}</p>
-            {list &&
-              <ul>{list.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
+            {list && (
+              <ul>
+                {list.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
-            }
+            )}
           </>
         ))}
       </div>
       <h3 className="about-ce-mark__note-title">{ABOUT_CE_MARK_NOTE}</h3>
       {ABOUT_CE_MARK_NOTE_TEXT.map((text, index) => (
-        <p key={index} className="about-ce-mark__note-text">{text}</p>
+        <p key={index} className="about-ce-mark__note-text">
+          {text}
+        </p>
       ))}
     </Section>
   )

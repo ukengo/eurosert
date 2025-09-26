@@ -4,7 +4,6 @@ import FooterContacts from '@/components/Footercontacts'
 import Footersocials from '@/components/Footersocials'
 import './Footer.scss'
 
-
 export default () => {
   const footerItems = [
     <FooterAbout key="about" />,

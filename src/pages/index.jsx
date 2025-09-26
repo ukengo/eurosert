@@ -1,4 +1,8 @@
-import { HOWWORK_CARDS, HOWWORK_SUBTITLE, HOWWORK_TITLE } from '@/constants/others'
+import {
+  HOWWORK_CARDS,
+  HOWWORK_SUBTITLE,
+  HOWWORK_TITLE,
+} from '@/constants/others'
 import Helpyou from '@/sections/Helpyou'
 import Hero from '@/sections/Hero'
 import Howwork from '@/sections/Howwork/Howwork'

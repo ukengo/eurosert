@@ -4,7 +4,14 @@ import Expert from '@/sections/Expert/Expert'
 import Helpyou from '@/sections/Helpyou'
 import AboutSertEur from '@/sections/AboutSertEur'
 import LISTSTEPS from '@/constants/Liststeps'
-import { EXPERT_EUROPEAN_DESCRIPTION, EXPERT_EUROPEAN_LIST, EXPERT_EUROPEAN_TITLE, STEPS_3_TITLE, STEPS_6_DESCRIPTION, STEPS_BUTTON_TEXT_TO_MARK } from '@/constants/others'
+import {
+  EXPERT_EUROPEAN_DESCRIPTION,
+  EXPERT_EUROPEAN_LIST,
+  EXPERT_EUROPEAN_TITLE,
+  STEPS_3_TITLE,
+  STEPS_6_DESCRIPTION,
+  STEPS_BUTTON_TEXT_TO_MARK,
+} from '@/constants/others'
 
 export const metadata = {
   title: 'European Certification',

@@ -51,12 +51,6 @@ const SERVICES_KARDS = [
 
 export default SERVICES_KARDS
 
-
-
-
-
-
-
 /* 
 const SERVICES_KARDS = [
   {

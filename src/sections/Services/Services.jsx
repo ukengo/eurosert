@@ -14,9 +14,7 @@ export default () => {
         <div className="services__header">
           <h2 className="services__title title-h2">{SERVICES_TITLE}</h2>
           <div className="services__subtitle">
-            <p>
-              {SERVICES_SUBTITLE}
-            </p>
+            <p>{SERVICES_SUBTITLE}</p>
           </div>
           <div className="services__cards">
             {SERVICESKARDS.map(({ iconName, title, descriptions }, item) => (
